@@ -1,5 +1,5 @@
 # Bluetooth
-bluetooth.device.default_name=Retroid Pocket 6
+bluetooth.device.default_name=Flip 2
 
 # Display
 debug.sf.ignore_hwc_physical_display_orientation=true

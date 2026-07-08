@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_RP6.mk
+    $(LOCAL_DIR)/lineage_flip2.mk

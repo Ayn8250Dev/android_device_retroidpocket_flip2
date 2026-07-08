@@ -1,3 +1,3 @@
-Device tree for the Retroid Pocket 6
+Device tree for the Retroid Pocket Flip 2
 
-Information about the device, build and install instructions can be found [here](http://wiki.lineageos.org/devices/RP6/)
+Information about the device, build and install instructions can be found [here](http://wiki.lineageos.org/devices/flip2/)

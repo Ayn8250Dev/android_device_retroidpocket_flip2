@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Retroid Pocket 6 Touchscreen
+# Retroid Pocket Flip2 Touchscreen
 
 device.internal = 1
 

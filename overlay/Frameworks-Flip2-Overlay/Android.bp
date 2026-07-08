@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "Frameworks-RP6-Overlay",
+    name: "Frameworks-Flip2-Overlay",
     vendor: true,
 }

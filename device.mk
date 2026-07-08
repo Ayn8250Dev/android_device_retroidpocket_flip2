@@ -7,19 +7,15 @@
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/fts_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/fts_ts.idc
 
-# Joystick
-PRODUCT_PACKAGES += \
-    left_stick_axis_swap
-
 # MCU
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/mcu/mcuapp_firmware.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/mcuapp_firmware.txt
 
 # Overlay
 PRODUCT_PACKAGES += \
-    Frameworks-RP6-Overlay \
-    Settings-RP6-Overlay \
-    SettingsProvider-RP6-Overlay
+    Frameworks-Flip2-Overlay \
+    Settings-Flip2-Overlay \
+    SettingsProvider-Flip2-Overlay
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -29,7 +25,7 @@ PRODUCT_SOONG_NAMESPACES += \
 $(call soong_config_set_bool,qti_vibrator,use_effect_stream,true)
 
 # Inherit from the common OEM chipset makefile.
-$(call inherit-product, device/ayn/qcs8550-common/common.mk)
+$(call inherit-product, device/ayn/sxr2130p-common/common.mk)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/retroidpocket/RP6/RP6-vendor.mk)
+$(call inherit-product, vendor/retroidpocket/flip2/flip2-vendor.mk)

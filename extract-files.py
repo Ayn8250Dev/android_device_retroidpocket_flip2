@@ -15,18 +15,14 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'vendor/ayn/qcs8550-common',
+    'vendor/ayn/sxr2130p-common',
 ]
 
 blob_fixups: blob_fixups_user_type = {
-    'vendor/etc/sensors/config/kailua_qmi8658_0.json': blob_fixup()
-        .regex_replace('"ver": "0"', '"ver": "1"')
-        .regex_replace('"data": "-y"', '"data": "+x"')
-        .regex_replace('"data": "-x"', '"data": "-y"'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'RP6',
+    'flip2',
     'retroidpocket',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
@@ -35,6 +31,6 @@ module = ExtractUtilsModule(
 
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(
-        module, 'qcs8550-common', 'ayn'
+        module, 'sxr2130p-common', 'ayn'
     )
     utils.run()

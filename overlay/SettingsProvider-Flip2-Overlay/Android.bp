@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "Settings-RP6-Overlay",
+    name: "SettingsProvider-Flip2-Overlay",
     vendor: true,
 }
